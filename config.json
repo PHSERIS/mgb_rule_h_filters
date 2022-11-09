@@ -1,0 +1,118 @@
+{
+	"name": "MGB Rule H Filters",
+
+	"namespace": "MGB\\RuleHFiltersExternalModule",
+
+	"description": "Rule H Filters which can run a subset of records by some choice criteria.",
+
+	"documentation": "README.md",
+
+	"authors": [		{
+			"name": "David Heskett",
+			"email": "dheskett@partners.org",
+			"institution": "PHS Mass General Brigham RISC"
+		},
+		{
+			"name": "Dimitar S. Dimitrov",
+			"email": "em@partners.org",
+			"institution": "PHS"
+		},
+		{
+			"name": "Eduardo Morales",
+			"email": "em@partners.org",
+			"institution": "PHS"
+		},
+		{
+			"name": "David Clark",
+			"email": "em@partners.org",
+			"institution": "PHS"
+		}
+	],
+
+	"versions": [
+		{
+			"1.0.0": "Initial Development - Building Rule H Filters handling for On Demand.",
+			"1.1.0": "Modifications - Fix Repeating data handling. Other code touch up.",
+			"1.1.1": "Modifications - Fix CheckMarx reported trivial issues."
+		}
+	],
+	
+	"permissions": [
+	],
+	
+	"enable-every-page-hooks-on-system-pages":false,	
+
+	"links": {
+		"project": [
+      {
+        "name": "RULE H: Filters Processing MENU",
+        "icon": "gear",
+        "url": "showMenuPage.php" 
+      }
+		],
+		"control-center": [
+
+		]
+	},
+
+	"no-auth-pages": [
+	],
+
+	"project-settings": [
+	    {
+				"key": "spool_switch",
+				"name": "Spooling Switch OFF<br>Unchecked is ON (Default is ON)<br>Check to turn OFF<br>This feature spools the total records chosen by the size of spool chunks.",
+				"type": "checkbox"
+	    },
+	    {
+				"key": "spool_size",
+				"name": "Spooling Chunk Size (Default: 100)",
+				"type": "text"
+	    },
+	    {
+				"key": "flag_merge_type",
+				"name": "Merge Type of DAGs, Time, Forms, Events<br>Unchecked is AND Logic (Default)<br>Checked is OR Logic",
+				"type": "checkbox"
+	    },
+	    {
+				"key": "debug_mode_log_project",
+				"name": "Project Log Mode",
+				"type": "checkbox"
+	    },
+	    {
+				"key": "debug_view_project",
+				"name": "Debug View in Project (checked is show programmer debugging text)",
+				"type": "checkbox"
+	    }
+	],
+
+	"system-settings": [
+			{
+				"key": "descriptive_generalemsettings_section",
+				"name": "<span style=\"background-color:#CCFFCC;\"><strong> &nbsp; General EM Settings &nbsp; </strong></span><br/>(REDCap Admin Use)",
+				"type": "descriptive"
+			},
+	    {
+				"key": "debug_view",
+				"name": "Debug View (checked is show programmer debugging text)",
+				"type": "checkbox"
+	    },
+			{
+				"key": "descriptive_debugger_section",
+				"name": "<span style=\"background-color:#CCFFCC;\"><strong> &nbsp; DEBUG CONFIG &nbsp; </strong></span><br/>(REDCap Admin Use)",
+				"type": "descriptive"
+			},
+	    {
+				"key": "debug_mode_log_system",
+				"name": "Global Log Mode",
+				"type": "checkbox"
+	    }
+	],
+
+	"compatibility": {
+		"php-version-min": "",
+		"php-version-max": "",
+		"redcap-version-min": "",
+		"redcap-version-max": ""
+	}
+}
