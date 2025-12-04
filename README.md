@@ -5,11 +5,13 @@ An external module to run the RULE H processing on a selected grouping of record
 
 ## Version
 
-Version 1.3.3
+Version 1.3.4
 
 ********************************************************************************
 
 ## Release notes
+
+1.3.4 Enhancement correction: remove js/jquery.min.js from JS files as unneeded and to comply with consortium submission process.
 
 1.3.3 Enhancement correction: Fix a couple direct calls to use standard REDCap calls.
 
